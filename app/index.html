@@ -18,19 +18,11 @@
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
 </head>
-<body ng-controller="PhoneListCtrl">
+<body>
 
   <div class="view-container">
     <div ng-view class="view-frame"></div>
-    <p>Nothing here {{'yet'+'!'}}</p>
-    <p>Total number of phones: 2</p>
-    <p> The Next, Next Generation tablet.</p>
-    <ul>
-      <li ng-repeat="phone in phones">
-        {{phone.number}}
-        <p>{{phone.snippet}}</p>
-      </li>
-    </ul>
+   
   </div>
 
 </body>
