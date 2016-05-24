@@ -20,13 +20,4 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Ph
       $scope.mainImageUrl = imageUrl;
     };
   }]);
-  function PhoneListCtrl($scope) {
-    $scope.phone = [
-      {"name":"Nexus S",
-        "snippet":"Fast just got faster with Nexus S." },
-      {"name":"IPHONE",
-        "snippet":"THE BEST PHONE"},
-      {"name":"sAMSUNG",
-        "snippet":"The Next, Next Generation tablet.."}
-      ];
-  }
+ 
