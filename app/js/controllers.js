@@ -22,7 +22,7 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Ph
   }]);
   
   function PhoneListCtrl($scope) {
-    $scope.phone=[
+    $scope.phones=[
       {"name":"Nexus S",
         "snippet":"Fast just got faster with Nexus S."},
       {"name":"Motorola XOOM™ with Wi-Fi",
