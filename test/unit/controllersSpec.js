@@ -15,6 +15,11 @@ describe('PhoneCat controllers', function() {
   beforeEach(module('phonecatServices'));
 
   describe('PhoneListCtrl', function(){
+    it('should create "phones" model with 3 phones',function(){
+      var scope = {},
+      ctrl = new PhoneListCtrl(scope),
+      except(scope.phones.length).toBe(3);
+    });
     var scope, ctrl, $httpBackend;
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
