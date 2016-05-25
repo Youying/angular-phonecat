@@ -18,7 +18,7 @@
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
 </head>
-<body>
+<body ng-controller="PhoneListCtrl">
 
   <div class="view-container">
     <div ng-view class="view-frame"></div>
@@ -36,7 +36,14 @@
         </p>
       </li>
     </ul>
-   
+   <ul>
+     <li ng-repeat="phone in phones">
+       {{phone.name}}
+       <p>
+         {{phone.snippet}}
+       </p>
+     </li>
+   </ul>
   </div>
 
 </body>
