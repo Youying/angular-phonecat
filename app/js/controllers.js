@@ -8,9 +8,8 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
   function($scope, Phone) {
     $scope.phones = Phone.query();
     $scope.orderProp = 'age';
-    
-    function PhoneListCtrl($scope) {
-    $scope.phones=[
+     function PhoneListCtrl($scope) {
+    $scope.phone=[
       {"name":"Nexus S",
         "snippet": "Fast just got faster with Nexus S."},
       {"name":"Motorola XOOM™ with Wi-Fi",
@@ -33,5 +32,7 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Ph
       $scope.mainImageUrl = imageUrl;
     };
   }]);
+  
+  
   
   
