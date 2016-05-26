@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="phonecat">
 <head>
   <meta charset="utf-8">
   <title>Google Phone Gallery</title>
@@ -20,11 +20,12 @@
 </head>
 <body ng-controller="PhoneListCtrl">
   <ul>
-    <li ng-repeat="phone in phones">
+    <li>
       {{phone.name}}
-    <p>{{phone.snippet}}</p>
+      <p>{{phone.snippet}}</p>
     </li>
   </ul>
+
   <div class="view-container">
     <div ng-view class="view-frame"></div>
     
