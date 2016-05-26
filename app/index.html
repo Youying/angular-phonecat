@@ -30,6 +30,7 @@
            <li ng-repeat="phone in phones | filter : query">
              {{phone.name}}
               <p>{{phone.snippet}}</p>
+              <p>Total Phones numbers:{{phones.length}}</p>
             </li>
          </ul>
        </div>
